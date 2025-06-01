@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heurística de Nielsen</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    h1, h3 {
+      color: #343a40;
+    }
+    .heuristic-list li {
+      margin-bottom: 0.5rem;
+    }
+    .card img {
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="text-center mb-3">Design Centrado no Ser Humano</h1>
+    <h5 class="text-center text-secondary mb-4">WCAG</h5>
+
+    <!-- Cards com exemplos das heurísticas -->
+    <div class="row g-4">
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="wcag\contraste.png" class="card-img-top" alt="Contraste" />
+          <div class="card-body">
+            <h5 class="card-title">Contraste de Cores Insuficiente(WCAG 2.1 – Critério 1.4.3: Contraste (mínimo) [Nível AA])</h5>
+            <p class="card-text">Este critério exige uma relação de contraste de pelo menos 4.5:1 entre o texto e o fundo para garantir legibilidade adequada.
+                Em algumas páginas do site, há textos em cinza claro sobre fundos brancos, como em descrições de produtos ou informações adicionais, que podem não atender ao contraste mínimo exigido. Além disso, de acordo com o contrast-checker, a nota é de 2.44, caracterizando como: Muito pobre.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="wcag\teclado.png" class="card-img-top" alt="Navegação por teclado incompleta" />
+          <div class="card-body">
+            <h5 class="card-title">Navegação por teclado incompleta(WCAG 2.1 – Critério 2.1.1: Teclado [Nível A])</h5>
+            <p class="card-text">A opção: "Ver ofertas em minha região" não pode ser acessada sem utlizar o mouse, ferindo o 
+                principio.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="wcag\ajuda.png" class="card-img-top" alt=" Mensagens de Erro Pouco Informativas em Formulários" />
+          <div class="card-body">
+            <h5 class="card-title"> Mensagens de Erro Pouco Informativas em Formulários(WCAG 2.1 – Critério 3.3.1: Identificação de erros [Nível A])</h5>
+            <p class="card-text">Nesse aspecto, o site da Magazine Luiza atende bem ao requisito, pois identifica e ajuda 
+                o usuário a entender o erro.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="wcag\titulo.png" class="card-img-top" alt="Estrutura de Cabeçalhos Inadequada" />
+          <div class="card-body">
+            <h5 class="card-title">Estrutura de Cabeçalhos Inadequada(WCAG 2.1 – Critério 1.3.1: Informação e Relações [Nível A])</h5>
+            <p class="card-text">Apesar de visualmente parecerem títulos, esses elementos podem não estar marcados com as tags corretas ('h1', h2, etc.), o que quebra a hierarquia semântica e dificulta a navegação por leitores de tela.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="wcag\alt.png" class="card-img-top" alt="Imagens Sem Texto Alternativo" />
+          <div class="card-body">
+            <h5 class="card-title">Imagens Sem Texto Alternativo(WCAG 2.1 – Critério 1.1.1: Conteúdo não textual [Nível A])</h5>
+            <p class="card-text">As imagens das geladeiras podem não conter um atributo alt descritivo (ou podem estar sem alt, ou com alt="").
+            Isso prejudica usuários com deficiência visual que dependem de leitores de tela para entender o conteúdo da imagem.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

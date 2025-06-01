@@ -1,57 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heuristica de  Nielsen</title>
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heurística de Nielsen</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    h1, h3 {
+      color: #343a40;
+    }
+    .heuristic-list li {
+      margin-bottom: 0.5rem;
+    }
+    .card img {
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
-    <h1>Design centrado no ser humano</h1>
-     <h3>Gabriella Torres, João Paulo</h3>
-       
-      <h3>As 10 heuristicas</h3>
+  <div class="container py-5">
+    <h1 class="text-center mb-3">Design Centrado no Ser Humano</h1>
+    <h5 class="text-center text-secondary mb-4">10 Heurísticas de Nielsen</h5>
 
-      <li>visibilidade do estado do sistema</li>
-      <li>correspondência entre o sistema e o mundo real</li>
-      <li>controle e liberdade do usuario</li>
-      <li>consitência e padronização</li>
-      <li>apoio ao reconhecimento, diagnostico e recuperação de erros</li>
-      <li>prevenção de erros</li>
-      <li>reconhecimento em vez de memorização </li>
-      <li>Flexibilidade e eficiencia de uso</li>
-      <li>projeto estetico e minimalista</li>
-      <li>Ajuda e Documentação</li>
-      
+    <!-- Cards com exemplos das heurísticas -->
+    <div class="row g-4">
 
-     <img src="visibilidade.png" height="150px" width="300px" alt="">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="static\visibilidade.png" class="card-img-top" alt="Visibilidade do sistema" />
+          <div class="card-body">
+            <h5 class="card-title">Visibilidade do estado do sistema</h5>
+            <p class="card-text">O site da Magazine atende perfeitamente o aspecto de visibilidade.</p>
+          </div>
+        </div>
+      </div>
 
-        <h3>visibilidade do estado do sistema</h3>
-        <h6>O site da magazanine atende perfeitamente o aspecto de visibilidade</h6>
-    
-     <img src="correspondencia.png" height="150px" width="350px" alt="">   
-        <h3>correspondência entre o sistema e o mundo real</h3>
-        <h6>A sacola indica os itens de compras, assim como no dia a dia. E o coração, os produtos que os clientes possuem interesse.</h6>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="static\correspondencia.png" class="card-img-top" alt="Correspondência com o mundo real" />
+          <div class="card-body">
+            <h5 class="card-title">Correspondência entre o sistema e o mundo real</h5>
+            <p class="card-text">A sacola indica itens de compras, como no dia a dia. O coração representa produtos de interesse.</p>
+          </div>
+        </div>
+      </div>
 
-     <img src="controle.png" height="150px" width="350px" alt="">   
-        <h3>controle e liberdade do usuario</h3> 
-        <h6>O site permite que os usuários corrijam erros e desfaçam ações, como excluir um item da sacola, oferecendo um sentido de controle sobre a experiência</h6>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="static\controle.png" class="card-img-top" alt="Controle do usuário" />
+          <div class="card-body">
+            <h5 class="card-title">Controle e liberdade do usuário</h5>
+            <p class="card-text">O site permite desfazer ações como excluir um item da sacola, dando mais controle ao usuário.</p>
+          </div>
+        </div>
+      </div>
 
-     <img src="consistencia.png" height="150px" width="300px" alt="">
-        <h3>consitência e padronização</h3>
-        <h6>Botões de navegação do site, localizado no canto superior direito.</h6>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="static\consistencia.png" class="card-img-top" alt="Consistência" />
+          <div class="card-body">
+            <h5 class="card-title">Consistência e padronização</h5>
+            <p class="card-text">Os botões de navegação estão localizados no canto superior direito, mantendo o padrão visual.</p>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-md-6">
+        <div class="card">
+          <img src="static\erro.png" class="card-img-top" alt="Prevenção de erros" />
+          <div class="card-body">
+            <h5 class="card-title">Prevenção de erros</h5>
+            <p class="card-text">Mensagem de erro clara ao tentar login com CPF incorreto.</p>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-md-6">
+        <div class="card">
+          <img src="static\reconhecimento.png" class="card-img-top" alt="Reconhecimento ao invés de memorização" />
+          <div class="card-body">
+            <h5 class="card-title">Reconhecimento ao invés de memorização</h5>
+            <p class="card-text">O site da Magazine Luiza facilita a navegação do usuário ao apresentar elementos visuais familiares e opções claras, reduzindo a necessidade de memorização. Por exemplo, utiliza ícones reconhecíveis para o carrinho de compras e favoritos, além de menus intuitivos que ajudam o usuário a encontrar produtos e categorias sem esforço.</p>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-md-6">
+        <div class="card">
+          <img src="static\flexibilidade.png" class="card-img-top" alt="Flexibilidade e eficiência de uso" />
+          <div class="card-body">
+            <h5 class="card-title">Flexibilidade e eficiência de uso</h5>
+            <p class="card-text">A plataforma oferece funcionalidades que atendem tanto usuários iniciantes quanto experientes. Por exemplo, permite que o usuário filtre produtos por diversas categorias, utilize a busca com sugestões automáticas e acesse rapidamente itens visualizados recentemente, proporcionando uma experiência eficiente e personalizada.</p>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-md-6">
+        <div class="card">
+          <img src="static\estetica.png" class="card-img-top" alt="Estética e design minimalista" />
+          <div class="card-body">
+            <h5 class="card-title">Estética e design minimalista</h5>
+            <p class="card-text">O design do site é limpo e focado no essencial. Utiliza uma paleta de cores coerente, tipografia legível e espaçamento adequado, evitando elementos desnecessários que possam distrair o usuário. Isso contribui para uma navegação mais fluida e agradável.</p>
+          </div>
+        </div>
+      </div>
 
-     <img src="erro.png" height="150px" width="300px" alt="">
-        <h3>prevenção de erros</h3>
-        <h6> Mensagens de erro clara ao tentar realizar o login, pois o CPF está incorreto.</h6>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="static\ajuda.png" class="card-img-top" alt="Ajudar os usuários a reconhecer, diagnosticar e recuperar-se de erros" />
+          <div class="card-body">
+            <h5 class="card-title">Ajudar os usuários a reconhecer, diagnosticar e recuperar-se de erros</h5>
+            <p class="card-text">Em situações de erro, como ao inserir dados incorretos no login, o site fornece mensagens claras e em linguagem simples, indicando o problema e sugerindo ações corretivas. Isso auxilia o usuário a entender o erro e tomar as medidas necessárias para corrigi-lo.</p>
+          </div>
+        </div>
+      </div>
 
-      
-          
+      <div class="col-md-6">
+        <div class="card">
+          <img src="static\documentacao.png" class="card-img-top" alt="Ajuda e documentação" />
+          <div class="card-body">
+            <h5 class="card-title">Ajuda e documentação</h5>
+            <p class="card-text">A Magazine Luiza disponibiliza uma seção de ajuda abrangente, incluindo perguntas frequentes, políticas de troca e devolução, e canais de atendimento ao cliente. Essas informações são facilmente acessíveis e fornecem suporte ao usuário sempre que necessário.</p>
+          </div>
+        </div>
+      </div>
 
+    </div>
+  </div>
 
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
